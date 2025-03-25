@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АВТОМИР</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="header_block container">
+            <div class="upper_header">
+                <div class="gps">
+                    <img src="assets/media/images/icons/gps_icon.svg" alt="">
+                    <a href="#">Казань</a>
+                </div>
+                <a href="tel:+78432038364">+7 (843) 203-83-64</a>
+            </div>
+            <div class="main_header">
+                <a href="index.html">
+                    <img class="logo" src="assets/media/images/logo/logo.svg" alt="">
+                </a>
+                <a class="btn_ctg" href="#">Каталог</a>
+                <div class="search">
+                    <input class="search_bar" type="text" placeholder="Поиск">
+                    <a class="search_button" href="#catalog">
+                        <img src="assets/media/images/icons/magnify_glass.svg" alt="">
+                    </a>
+                </div>
+                <div class="three_buttons">
+                    <a href="reg.html">
+                        <img src="assets/media/images/icons/account.svg" alt="">
+                    </a>
+                    <a href="reg.html">
+                        <img src="assets/media/images/icons/orders.svg" alt="">
+                    </a>
+                    <a href="reg.html">
+                        <img src="assets/media/images/icons/cart.svg" alt="">
+                    </a>
+                </div>
+                <div class="burger-menu">
+                    <div class="burger-icon" onclick="toggleMenu()">
+                        <img src="assets/media/images/icons/burger_menu.svg" alt="">
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">О нас</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <script>
+            function toggleMenu() {
+                const menu = document.querySelector('.menu');
+                menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            }
+        </script>
+    </header>
+    <!-- header end -->
+    <!-- ad start -->
+    <div class="ad container">
+        <a href="#">
+            <img src="assets/media/images/banner/main_ad.svg" alt="">
+        </a>
+    </div>
+    <!-- ad end -->
+    <!-- special promotions start -->
+    <div class="spec_promo container">
+        <h1 class="title">Специальные предложения!</h1>
+        <div class="catalog_block">
+            <div class="main_catalog_spec">
+                <a href="item_page.html" class="one_item">
+                    <div class="photo_one_item">
+                        <img src="assets/media/images/items/filtron.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p class="main_price">610 ₽</p>
+                        <p class="last_price">920 ₽</p>
+                    </div>
+                    <p class="item_name">Фильтр масляный Filtron OP595</p>
+                    <button class="btn_add_cart" href="item_page.html">Добавить в корзину</button>
+                </a>
+                <a href="item_page.html" class="one_item">
+                    <div class="photo_one_item">
+                        <img src="assets/media/images/items/osram.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p class="main_price">340 ₽</p>
+                        <p class="last_price">610 ₽</p>
+                    </div>
+                    <p class="item_name">Лампа OSRAM Original - H7-55 Вт-3200К, 1 шт.</p>
+                    <button class="btn_add_cart" href="item_page.html">Добавить в корзину</button>
+                </a>
+                <a href="item_page.html" class="one_item">
+                    <div class="photo_one_item">
+                        <img src="assets/media/images/items/kolodki.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p class="main_price">780 ₽</p>
+                        <p class="last_price">1 280 ₽</p>
+                    </div>
+                    <p class="item_name">Дисковые тормозные колодки для передних...</p>
+                    <button class="btn_add_cart" href="item_page.html">Добавить в корзину</button>
+                </a>
+                <a href="item_page.html" class="one_item">
+                    <div class="photo_one_item">
+                        <img src="assets/media/images/items/accum.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p class="main_price">12 450 ₽</p>
+                        <p class="last_price">15 720 ₽</p>
+                    </div>
+                    <p class="item_name">Батарея аккумуляторная MUTLU SFB 75А/ч 720А</p>
+                    <button class="btn_add_cart" href="item_page.html">Добавить в корзину</button>
+                </a>
+                <a href="item_page.html" class="one_item">
+                    <div class="photo_one_item">
+                        <img src="assets/media/images/items/filtron.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p class="main_price">610 ₽</p>
+                        <p class="last_price">920 ₽</p>
+                    </div>
+                    <p class="item_name">Фильтр масляный Filtron OP595</p>
+                    <button class="btn_add_cart" href="item_page.html">Добавить в корзину</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- special promotions end -->
+    <!-- catalog start -->
+    <div class="catalog container" id="catalog">
+        <h1 class="title">Каталог</h1>
+        <div class="catalog_block">
+            <div class="filter_left">
+                <p class="filter_title">Категория</p>
+                <div class="categories">
+                    <a href="#">Свечи зажигания</a>
+                    <a href="#">Автосвет</a>
+                    <a href="#">Аккумуляторы</a>
+                    <a href="#">Моторные масла</a>
+                    <a href="#">Фильтры</a>
+                </div>
+                <a class="check_all" href="#">Посмотреть все</a>
+                <div class="filter_left">
+                    <p class="filter_title">Фильтры</p>
+                    <p class="filter_title">Бренд</p>
+                    <div class="categories">
+                        <a href="#">Filtron</a>
+                        <a href="#">OSRAM</a>
+                        <a href="#">MUTLU</a>
+                        <a href="#">Denso</a>
+                        <a href="#">NGK</a>
+                    </div>
+                    <a class="check_all" href="#">Посмотреть все</a>
+                    <p class="filter_title">Цена</p>
+                    <div class="price_min_max">
+                        <input class="price_input" type="number" placeholder="мин.">
+                        <input class="price_input" type="number" placeholder="макс.">
+                    </div>
+                </div>
+            </div>
+            <div class="main_catalog">
+                <a href="item_page.html" class="one_item">
+                    <div class="photo_one_item">
+                        <img src="assets/media/images/items/filtron.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p class="main_price">610 ₽</p>
+                        <p class="last_price">920 ₽</p>
+                    </div>
+                    <p class="item_name">Фильтр масляный Filtron OP595</p>
+                    <button class="btn_add_cart" href="item_page.html">Добавить в корзину</button>
+                </a>
+                <a href="item_page.html" class="one_item">
+                    <div class="photo_one_item">
+                        <img src="assets/media/images/items/osram.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p class="main_price">340 ₽</p>
+                        <p class="last_price">610 ₽</p>
+                    </div>
+                    <p class="item_name">Лампа OSRAM Original - H7-55 Вт-3200К, 1 шт.</p>
+                    <button class="btn_add_cart" href="item_page.html">Добавить в корзину</button>
+                </a>
+                <a href="item_page.html" class="one_item">
+                    <div class="photo_one_item">
+                        <img src="assets/media/images/items/kolodki.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p class="main_price">780 ₽</p>
+                        <p class="last_price">1 280 ₽</p>
+                    </div>
+                    <p class="item_name">Дисковые тормозные колодки для передних...</p>
+                    <button class="btn_add_cart" href="item_page.html">Добавить в корзину</button>
+                </a>
+                <a href="item_page.html" class="one_item">
+                    <div class="photo_one_item">
+                        <img src="assets/media/images/items/accum.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p class="main_price">12 450 ₽</p>
+                        <p class="last_price">15 720 ₽</p>
+                    </div>
+                    <p class="item_name">Батарея аккумуляторная MUTLU SFB 75А/ч 720А</p>
+                    <button class="btn_add_cart" href="item_page.html">Добавить в корзину</button>
+                </a>
+                <a href="item_page.html" class="one_item">
+                    <div class="photo_one_item">
+                        <img src="assets/media/images/items/filtron.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p class="main_price">610 ₽</p>
+                        <p class="last_price">920 ₽</p>
+                    </div>
+                    <p class="item_name">Фильтр масляный Filtron OP595</p>
+                    <button class="btn_add_cart" href="item_page.html">Добавить в корзину</button>
+                </a>
+                <a href="item_page.html" class="one_item">
+                    <div class="photo_one_item">
+                        <img src="assets/media/images/items/osram.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p class="main_price">340 ₽</p>
+                        <p class="last_price">610 ₽</p>
+                    </div>
+                    <p class="item_name">Лампа OSRAM Original - H7-55 Вт-3200К, 1 шт.</p>
+                    <button class="btn_add_cart" href="item_page.html">Добавить в корзину</button>
+                </a>
+                <a href="item_page.html" class="one_item">
+
+                    <div class="photo_one_item">
+                        <img src="assets/media/images/items/kolodki.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p class="main_price">780 ₽</p>
+                        <p class="last_price">1 280 ₽</p>
+                    </div>
+                    <p class="item_name">Дисковые тормозные колодки для передних...</p>
+                    <button class="btn_add_cart" href="item_page.html">Добавить в корзину</button>
+                </a>
+                <a href="item_page.html" class="one_item">
+
+                    <div class="photo_one_item">
+                        <img src="assets/media/images/items/accum.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p class="main_price">12 450 ₽</p>
+                        <p class="last_price">15 720 ₽</p>
+                    </div>
+                    <p class="item_name">Батарея аккумуляторная MUTLU SFB 75А/ч 720А</p>
+                    <button class="btn_add_cart" href="item_page.html">Добавить в корзину</button>
+                </a>
+                <a href="item_page.html" class="one_item">
+                    <div class="photo_one_item">
+                        <img src="assets/media/images/items/filtron.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p class="main_price">610 ₽</p>
+                        <p class="last_price">920 ₽</p>
+                    </div>
+                    <p class="item_name">Фильтр масляный Filtron OP595</p>
+                    <button class="btn_add_cart" href="item_page.html">Добавить в корзину</button>
+                </a>
+                <a href="item_page.html" class="one_item">
+                    <div class="photo_one_item">
+                        <img src="assets/media/images/items/osram.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p class="main_price">340 ₽</p>
+                        <p class="last_price">610 ₽</p>
+                    </div>
+                    <p class="item_name">Лампа OSRAM Original - H7-55 Вт-3200К, 1 шт.</p>
+                    <button class="btn_add_cart" href="item_page.html">Добавить в корзину</button>
+                </a>
+                <a href="item_page.html" class="one_item">
+                    <div class="photo_one_item">
+                        <img src="assets/media/images/items/kolodki.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p class="main_price">780 ₽</p>
+                        <p class="last_price">1 280 ₽</p>
+                    </div>
+                    <p class="item_name">Дисковые тормозные колодки для передних...</p>
+                    <button class="btn_add_cart" href="item_page.html">Добавить в корзину</button>
+                </a>
+                <a href="item_page.html" class="one_item">
+                    <div class="photo_one_item">
+                        <img src="assets/media/images/items/accum.png" alt="">
+                    </div>
+                    <div class="price">
+                        <p class="main_price">12 450 ₽</p>
+                        <p class="last_price">15 720 ₽</p>
+                    </div>
+                    <p class="item_name">Батарея аккумуляторная MUTLU SFB 75А/ч 720А</p>
+                    <button class="btn_add_cart" href="item_page.html">Добавить в корзину</button>
+                </a>
+            </div>
+        </div>
+        <a class="btn_show_more" href="#">Показать еще</a>
+
+    </div>
+    </div>
+    <!-- catalog end -->
+    <!-- advantages start -->
+    <div class="advantages_outside container">
+        <h1 class="title">Почему выбирают нас?</h1>
+        <div class="advantages">
+            <a href="#" class="one_adv">
+                <img src="assets/media/images/icons/rub_icon.svg" alt="">
+                <p>Выгодные цены и регулярные акции для покупателей</p>
+            </a>
+            <a href="#" class="one_adv">
+                <img src="assets/media/images/icons/delivery.svg" alt="">
+                <p>Быстрая доставка и надёжные поставщики</p>
+            </a>
+            <a href="#" class="one_adv">
+                <img src="assets/media/images/icons/repair.svg" alt="">
+                <p>Широкий ассортимент качественных автозапчастей</p>
+            </a>
+            <a href="#" class="one_adv">
+                <img src="assets/media/images/icons/support.svg" alt="">
+                <p>Профессиональная консультация и помощь в подборе запчастей</p>
+            </a>
+        </div>
+    </div>
+    <!-- advantages end -->
+    <!-- footer start -->
+    <div class="footer container">
+        <div class="one_column_adaptive">
+            <img src="assets/media/images/logo/logo.svg" alt="">
+            <p>Телефон:</p>
+            <a href="tel:+78432038364">+7 (843) 203-83-64</a>
+            <p>Почта</p>
+            <a href="mailto:automir@gmail.com">automir@gmail.com</a>
+        </div>
+        <div class="one_column">
+            <p class="column_title">Каталог товаров</p>
+            <a href="index.html">Запчасти для ТО</a>
+            <a href="index.html">Аккумуляторы</a>
+            <a href="index.html">Лампы</a>
+            <a href="index.html">Шины</a>
+            <a href="index.html">Диски</a>
+            <a href="index.html">Автомасла</a>
+            <a href="index.html">Автоаксессуары</a>
+        </div>
+        <div class="one_column">
+            <p class="column_title">Клиентам</p>
+            <a href="account.html">Личный кабинет</a>
+            <a href="#">Промо товары</a>
+            <a href="#">Акции</a>
+            <a href="#">Блог</a>
+            <a href="#">Оптовым клиентам</a>
+            <a href="#">Гарантия и возврат</a>
+            <a href="account.html">Оплата и доставка</a>
+        </div>
+        <div class="one_column">
+            <p class="column_title">Информация</p>
+            <a href="#">Контакты</a>
+            <a href="#">О компании</a>
+            <a href="#">Новости</a>
+            <a href="#">Конфиденциальность</a>
+            <a href="#">Публичная оферта</a>
+        </div>
+        <div class="one_column_adaptive">
+            <p class="column_title">Наши страницы в соц. сетях</p>
+            <div class="three_soc_media">
+                <a href="#">
+                    <img src="assets/media/images/icons/vk_logo.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="assets/media/images/icons/tg_logo.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="assets/media/images/icons/youtube_logo.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- footer end -->
+</body>
+
+</html>
